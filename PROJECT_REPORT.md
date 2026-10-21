@@ -9,6 +9,7 @@
 | **Tech Stack** | React.js · Node.js · Express.js · MongoDB · Mongoose |
 | **Project Type** | Full Stack Web Application |
 | **Date** | October 2026 |
+| **GitHub** | [github.com/kgowtham007/Smart-Inventory-Management](https://github.com/kgowtham007/Smart-Inventory-Management) |
 
 ---
 
@@ -723,29 +724,38 @@ npm test                   # Vitest frontend tests
 
 ## 11. GitHub Repository
 
-### Repository URL
+### 🔗 Live Repository
 
-```
-https://github.com/kgowtham007/Smart-Inventory-Management
-```
+[![GitHub](https://img.shields.io/badge/GitHub-Smart--Inventory--Management-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/kgowtham007/Smart-Inventory-Management)
 
-### How to Push to GitHub
+**URL:** [https://github.com/kgowtham007/Smart-Inventory-Management](https://github.com/kgowtham007/Smart-Inventory-Management)
+
+> ✅ **Status:** Repository is live — all 100 source files pushed to `main` branch.
+
+### Commit History
+
+| SHA | Message | Branch |
+|-----|---------|--------|
+| `69d335d` | Initial commit: Smart Inventory & Supply Chain Management System | `main` |
+
+### Clone & Run Locally
 
 ```bash
-# 1. Initialize git in the project root
-cd smart-inventory-management
-git init
+# Clone the repository
+git clone https://github.com/kgowtham007/Smart-Inventory-Management.git
+cd Smart-Inventory-Management
 
-# 2. Add all files
-git add .
+# Setup backend
+cd backend
+cp .env.example .env   # fill in MONGO_URI and JWT_SECRET
+npm install
+npm run dev            # starts on http://localhost:5000
 
-# 3. Initial commit
-git commit -m "Initial commit: Smart Inventory Management System"
-
-# 4. Add remote and push
-git remote add origin https://github.com/kgowtham007/Smart-Inventory-Management.git
-git branch -M main
-git push -u origin main
+# Setup frontend (new terminal)
+cd ../frontend
+cp .env.example .env   # set VITE_API_URL=http://localhost:5000/api
+npm install
+npm run dev            # starts on http://localhost:5173
 ```
 
 ### Repository Structure on GitHub
